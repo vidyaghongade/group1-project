@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #212121;
+    scroll-behavior: smooth;
+}
+
+.section-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+
+
+/* Navbar */
+header {
+   background-color: #212121;
+  position: fixed;
+   width: 100%;
+  z-index: 1000;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.logo-text {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+}
+.logo-text .highlight {
+  color: #ff4700;
+}
+.nav-menu {
+  display: flex;
+  gap: 30px;
+  font-size: 18px;
+}
+.nav-link {
+  padding: 10px 18px;
+  border-radius: 5px;
+  transition: all 0.3s;
+  color: #fff;
+  background-color: #212121;
+}
+.nav-link:hover {
+  background-color: #ff4700;
+  color: #212121;
+}
+
+
+
+.main-heading {
+    text-align: center;
+    font-size: 55px;
+    color: #fff;
+    padding-top: 80px;
+}
+
+.main-heading span {
+
+    color: #fac031;
+    margin-left: 15px;
+    font-family: "Caveat", cursive;
+    display: inline-block;
+    position: relative;
+}
+
+
+.main-heading span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  height: 2px;
+  width: 100%;
+  background: #fac031;
+  box-shadow: 0 0 8px #fac03180;
+}
+
+
+
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin: 30px auto;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 390px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(77, 75, 75, 0.2),
+        0 0 20px rgba(77, 75, 75, 0.2);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+
+}
+
+.image-container {
+    height: 200px;
+    width: 300px;
+    overflow: hidden;
+
+}
+
+.image-container img {
+    height: 100%;
+    width: 100%;
+    padding: auto;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.5s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+
+}
+
+.small-card {
+    width: 45px;
+    height: 45px;
+    float: right;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    opacity: 0;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.card:hover .small-card {
+    opacity: 1;
+}
+
+.small-card i {
+    font-size: 25px;
+    color: #000;
+    cursor: pointer;
+    text-shadow: 0 0 6px #000;
+    transition: 0.2s;
+}
+
+.small-card i:hover {
+    color: red;
+
+}
+
+.menu-info h2 {
+    width: 60%;
+    text-align: center;
+    margin: 5px auto 0 auto;
+    font-size: 2em;
+    color: #ff4700;
+}
+
+.menu-info p {
+    text-align: center;
+    line-height: 20px;
+    margin-top: 3px;
+    font-size: 15px;
+    font-weight: 300;
+
+}
+
+.menu-info h3 {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 1.5em;
+}
+
+.menu-info .menu-icon {
+    text-align: center;
+    color: #ff4700;
+    margin: 8px 0 8px 0;
+}
+
+.menu-info .menu_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    background: #82b026;
+    padding: 8px 9px;
+    margin: 0 80px;
+    transition: 0.3s;
+}
+
+.menu_btn:hover {
+    background: #e5ac1b;
+    color: #fff;
+    transform: scale(1.05);
+}
