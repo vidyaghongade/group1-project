@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Sevillana&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.section-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+/* Navbar */
+header {
+    background-color: #212121;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo-text {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.logo-text .highlight {
+    color: #ff4700;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    padding: 10px 18px;
+    border-radius: 5px;
+    transition: all 0.3s;
+    background-color: #212121;
+}
+
+.nav-link:hover {
+    background-color: #ff4700;
+    color: #212121;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #212121;
+    color: white;
+
+
+}
+
+#heading {
+    height: 100px;
+    width: 100%;
+    background-color: #212121;
+    font-size: 1.50em;
+    text-align: center;
+    padding-bottom: 0;
+    padding-top: 100px;
+
+
+}
+
+body span {
+    color: #ff4700;
+}
+
+#box1 {
+    height: 300px;
+    width: 30%;
+    background-color: #212121;
+    margin-top: 20PX;
+    float: left;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    transition: all 3s linear;
+}
+
+#box1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+#box2 {
+    height: 300px;
+    width: 60%;
+    color: white;
+    background-color: #212121;
+    float: left;
+    margin-top: 20px;
+    flex-wrap: wrap;
+
+}
+
+#box2 span {
+    color: #ff4700;
+    font-size: 1.40;
+
+}
+
+#box2 h1 {
+    font-size: 1.50em;
+    text-align: center;
+}
+
+#box2 p {
+    text-align: left;
+    padding: 10px;
+    margin-left: 30px;
+
+
+}
+
+#lastpage {
+    height: 300px;
+    width: 100%;
+    background-color: #212121;
+    float: left;
+
+}
+
+#lastpage span {
+    color: #ff4700;
+    flex-wrap: wrap;
+}
+
+#lastpage h2 {
+    font-size: 2.40em;
+    text-align: center;
+}
+
+.card {
+    height: 150px;
+    width: 150px;
+    background-color: #ff4700;
+    float: left;
+    margin: 60px;
+    margin-left: 125px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+    transition: all 3s linear;
+
+}
+
+.pic {
+    height: 65%;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.pic img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+
+}
+
+.card :hover {
+    transform: scale(1.1);
+}
+
+
+/* @media screen and (max-width: 600px) {
+
+    #heading {
+        font-size: 20px;
+        padding-top: 80px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .nav-link {
+        width: 100%;
+        text-align: left;
+    }
+
+    #box1 {
+        width: 50%;
+        height: auto;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        margin-left: 25%;
+    }
+
+    #box1 img {
+        width: 100%;
+        height: auto;
+    }
+
+    #box2 {
+        width: 100%;
+        height: 60%;
+        font-size: 14px;
+        flex-wrap: wrap;
+
+    }
+
+    #box2 h2 {
+        font-size: 1.80em;
+        text-align: start;
+        margin-left: 150px;
+        margin-bottom: 20px;
+    }
+
+    #box2 p {
+        font-size: 16px;
+        flex-wrap: wrap;
+        text-align: start;
+        padding: 20px;
+    }
+
+    #lastpage {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    #lastpage h2 {
+        font-size: 2.30em;
+    }
+
+    .card {
+        width: 120px;
+        height: 120px;
+        margin: 10px;
+        float: none;
+    }
+
+    .pic {
+        height: 70%;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+} */
+
+@media screen and (max-width:480px) {
+    #heading {
+        font-size: 22px;
+        padding-top: 180px;
+        height: 70px;
+    }
+
+    #box1 {
+        width: 45%;
+        height: auto;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        margin-left: 25%;
+    }
+
+    #box1 img {
+        width: 100%;
+        height: auto;
+    }
+
+    #box2 {
+        width: 100%;
+        font-size: 16px;
+        padding-top: 10px;
+    }
+
+    #box2 h2 {
+        font-size: 1.6em;
+        margin-left: 20px;
+    }
+
+    #box2 p {
+        font-size: 16px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #lastpage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    #lastpage h2 {
+        font-size: 2.2em;
+    }
+
+    .card {
+        width: 130px;
+        height: 130px;
+        margin: 15px;
+        float: none;
+
+    }
+
+    .pic {
+        height: 70%;
+    }
+
+    .card:hover {
+        transform: scale(1.08);
+    }
+
+    .nav-menu {
+        flex-direction: row;
+        background-color: #212121;
+        padding: 7px;
+        gap: 5px;
+    }
+
+    .nav-link {
+        display: block;
+        text-align: center;
+        height: 20px;
+        width: 34px ;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+
+@media screen and (min-width:481px) and (max-width: 768px) {
+    #heading {
+        font-size: 22px;
+        padding-top: 180px;
+        height: 70px;
+    }
+
+    #box1 {
+        width: 45%;
+        height: auto;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        margin-left: 25%;
+    }
+
+    #box1 img {
+        width: 100%;
+        height: auto;
+    }
+
+    #box2 {
+        width: 100%;
+        font-size: 16px;
+        padding-top: 10px;
+    }
+
+    #box2 h2 {
+        font-size: 1.6em;
+        margin-left: 20px;
+    }
+
+    #box2 p {
+        font-size: 16px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #lastpage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    #lastpage h2 {
+        font-size: 2.2em;
+    }
+
+    .card {
+        width: 130px;
+        height: 130px;
+        margin: 15px;
+        float: none;
+
+    }
+
+    .pic {
+        height: 70%;
+    }
+
+    .card:hover {
+        transform: scale(1.08);
+    }
+
+    .nav-menu {
+        flex-direction: row;
+        background-color: #212121;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .nav-link {
+        display: block;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
