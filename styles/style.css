@@ -120,19 +120,95 @@ header {
   cursor: pointer;
 }
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
+ 
+  /* Tablets and below */
+@media (max-width: 1024px) {
+  header{
+    width: 100%;
   }
-  .nav-menu {
-    display: none;
+  
+  .navbar {
     flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .nav-menu {
+    flex-direction: row;
     gap: 10px;
+    width: 100%;
+    margin-top: 10px;
     background-color: #212121;
-    padding: 20px 0;
   }
-  .nav-menu.active {
-    display: flex;
+
+  .logo-text {
+    font-size: 30px;
   }
+
+  .main-heading {
+    font-size: 44px;
+    padding-top: 100px;
+  }
+
+  .card {
+    width: 45%;
+  }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+  .logo-text {
+    font-size: 24px;
+  }
+
+  .nav-menu {
+    font-size: 14px;
+    gap: 5px;
+  }
+
+  .nav-link {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .main-heading {
+    font-size: 32px;
+    padding-top: 120px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .card {
+    width: 80%;
+    height: auto;
+  }
+
+  .image-container {
+    width: 100%;
+  
+  }
+
+  .image-container img {
+    object-fit: cover;
+  }
+
+  .menu-info h2 {
+    font-size: 1.4em;
+  }
+
+  .menu-info h3 {
+    font-size: 1.2em;
+  }
+
+  .menu-info .menu_btn {
+    margin: 10px auto;
+    width: 80%;
+  }
+}
   .hero-section {
     flex-direction: column;
     text-align: center;
